@@ -13,7 +13,7 @@ LIST_OF_REQUIREMENTS = [
     'matplotlib',
     'scikit-learn',
     'yfinance',
-    'tensorflow.keras'
+    'tensorflow'
 ]
 
 setup(
