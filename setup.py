@@ -3,25 +3,30 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
+PROJECT_NAME = "stock_price_prediction"
+AUTHOR_NAME = "suyashpurwar1"
+SRC_DIR = "src"
+LIST_OF_REQUIREMENTS = [
+    'streamlit',
+    'numpy',
+    'pandas',
+    'matplotlib',
+    'scikit-learn',
+    'tensorflow',
+    'yfinance'
+]
+
 setup(
-    name="stock_price_prediction",
+    name=PROJECT_NAME,
     version="0.0.1",
-    author="Suyash Purwar",
-    description="Stock Price Prediction using LSTM, GRU, and Bidirectional LSTM models",
-    long_description=long_description,
+    author=AUTHOR_NAME,
+    description="Stock Price Prediction using Machine Learning",
+    long_description="Stock price predictor ",
     long_description_content_type="text/markdown",
-    url="https://github.com/suyashpurwar1/stock_price_prediction",
-    author_email="your-email@example.com",  # Please update with your email address
-    packages=find_packages(),
+    url=f"https://github.com/{AUTHOR_NAME}/{PROJECT_NAME}",
+    author_email="your-email@example.com",
+    packages=find_packages(include=[f"{SRC_DIR}"]),
     license="MIT",
-    python_requires=">=3.6",
-    install_requires=[
-        'numpy==1.21.2',
-        'pandas==1.3.3',
-        'streamlit==1.18.0',
-        'matplotlib==3.4.3',
-        'scikit-learn==0.24.2',
-        'tensorflow==2.6.0',
-        'yfinance==0.1.64'
-    ],
+    python_requires=">=3.7",
+    install_requires=LIST_OF_REQUIREMENTS
 )
