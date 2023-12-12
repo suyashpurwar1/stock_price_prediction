@@ -12,7 +12,8 @@ LIST_OF_REQUIREMENTS = [
     'pandas',
     'matplotlib',
     'scikit-learn',
-    'yfinance'
+    'yfinance',
+    'keras'
 ]
 
 setup(
