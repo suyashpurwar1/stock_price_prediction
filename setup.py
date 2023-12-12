@@ -12,7 +12,6 @@ LIST_OF_REQUIREMENTS = [
     'pandas',
     'matplotlib',
     'scikit-learn',
-    'tensorflow',
     'yfinance'
 ]
 
@@ -23,7 +22,7 @@ setup(
     description="Stock Price Prediction using Machine Learning",
     long_description="Stock price predictor ",
     long_description_content_type="text/markdown",
-    url=f"https://github.com/{AUTHOR_NAME}/{PROJECT_NAME}",
+    url=f"https://github.com/suyashpurwar1/stock_price_prediction",
     author_email="your-email@example.com",
     packages=find_packages(include=[f"{SRC_DIR}"]),
     license="MIT",
