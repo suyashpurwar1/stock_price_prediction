@@ -5,7 +5,7 @@ pandas
 matplotlib
 scikit-learn
 yfinance
-keras
+tensorflow.keras
 
 ### local packages -
 -e .
